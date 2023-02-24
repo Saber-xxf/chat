@@ -14,7 +14,8 @@ def hello_world():  # put application's code here
         max_tokens=2033,
         top_p=1,
         frequency_penalty=0.0,
-        presence_penalty=0.6
+        presence_penalty=0.6,
+        stop=[" Human:", " AI:"]
     )
     return response.choices[0].text
 
